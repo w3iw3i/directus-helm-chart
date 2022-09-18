@@ -1,0 +1,57 @@
+apiVersion: v1
+entries:
+  directus:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-18T10:27:50.081237166+08:00"
+    dependencies:
+    - name: postgresql-ha
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.4.4
+    description: A Helm chart for deploying Directus. Uses Bitnami's PostgresQL by
+      default.
+    digest: f36568e8078e2fdea273e6e73755397582e3fde256a2a25154d2129b98b909d3
+    name: directus
+    type: application
+    urls:
+    - https://w3iw3i.github.io/directus-helm-chart/directus-0.1.0.tgz
+    version: 0.1.0
+  postgresql-ha:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 14.5.0
+    created: "2022-09-18T10:27:50.104763549+08:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: This PostgreSQL cluster solution includes the PostgreSQL replication
+      manager, an open-source tool for managing replication and failover on PostgreSQL
+      clusters.
+    digest: 22e48c1ea025798be14b3915d994937a33cb388c5ffd43933a8efe0d3ccbd898
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: postgresql-ha
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://w3iw3i.github.io/directus-helm-chart/charts/postgresql-ha-9.4.4.tgz
+    version: 9.4.4
+generated: "2022-09-18T10:27:50.067242635+08:00"
